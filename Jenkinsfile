@@ -13,7 +13,7 @@ pipeline {
             }
             steps {
                 echo 'Cloning...'
-                git 'https://github.com/RayItern/masterproject.git'
+                git 'https://github.com/bensonezea/samplejenkinsproject.git'
             }
         }
         
@@ -37,7 +37,7 @@ pipeline {
             }
         }
         
-        stage('UnitTest on slave2') {
+        stage('UnitTest on slave1') {
             agent {
                 label 'slave2'
             }
